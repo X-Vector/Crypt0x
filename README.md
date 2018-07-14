@@ -25,4 +25,5 @@ python3 crypto.py
 
 ![Crypt0x](https://a.top4top.net/p_9255fiew1.png "Crypt0x in action")
 
-- Coded By [Mohamed Abdelfatah](https://www.facebook.com/X.Vector1)
+- Coded By X-Vector
+- [Facebook](https://www.facebook.com/X.Vector1) - [Linkedin](https://www.linkedin.com/in/mohamed-abdelfatah-509b01149/)
