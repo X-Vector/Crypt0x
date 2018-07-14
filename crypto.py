@@ -44,7 +44,7 @@ def banner():
             #     # #   #    #   #        #    #   #   #   #
              #####  #    #   #   #        #     ###   #     #  %s%s
                 # Coded By Mohamed Abdelfatah - X-Vector
-                             fb/X.Vector1
+                            fb.com/X.Vector1
     """ % (R, W, Y))
 
 
