@@ -19,7 +19,7 @@ chmod +x requirments.sh
 ```
 4 - Open Tool :
 ```
-Python3 crypto.py
+python3 crypto.py
 ```
 # Screenshots :
 
