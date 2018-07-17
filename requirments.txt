@@ -1,0 +1,12 @@
+pip3 install pycrypto
+pip3 install Crypto.Cipher
+pip3 install cryptography.fernet
+pip3 install Crypto.Protocol.KDF
+pip3 install Crypto
+pip3 install Crypto.Hash
+pip3 install Crypto.Util
+pip3 install platform
+pip3 install sys
+pip3 install win_unicode_console
+pip3 install os
+pip3 install colorama
