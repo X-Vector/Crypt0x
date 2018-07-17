@@ -83,10 +83,24 @@ print("""
 [0] - Exit
 """)
 
+def random_line(dir='keys.txt'):
+    import random
+    lines = open(dir).read().splitlines()
+    myline = random.choice(lines)
+    return myline
+
+
 x = int(input(">>>> "))
 if x == 1 :
     y = input("Enter Your Plain Text : ")
     z = input("Enter Your Key : ")
+    anwser = str(input("Do You Want Generate a Random Key(y/n) : "))
+    if anwser == 'y' or anwser = 'Y':
+        z = random_line()
+        print("Your Key Is : "+R+z+Y)
+        print("Keep it Save")
+    else:
+        z = input("Enter Your Key : ")
     print("*"*80)
     Blowfish_encrypt(y,z)
     print("*"*80)

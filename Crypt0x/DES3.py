@@ -76,6 +76,13 @@ print("""
 [0] - Exit
 """)
 
+def random_line(dir='keys.txt'):
+    import random
+    lines = open(dir).read().splitlines()
+    myline = random.choice(lines)
+    return myline
+
+
 x = int(input(">>> "))
 if x == 1:
     print("""
@@ -84,8 +91,15 @@ if x == 1:
 # key size (must be either 16 or 24 bytes long)
 
     """)
-    y = input("Enter Your Plain Text : ")
+     y = input("Enter Your Plain Text : ")
     z = input("Enter Your Key : ")
+    anwser = str(input("Do You Want Generate a Random Key(y/n) : "))
+    if anwser == 'y' or anwser = 'Y':
+        z = random_line()
+        print("Your Key Is : "+R+z+Y)
+        print("Keep it Save")
+    else:
+        z = input("Enter Your Key : ")
     DES3_encrypt(y,z)
 
 elif x == 2:

@@ -85,10 +85,15 @@ print("""
 [0] - Exit
 """)
 
-x = int(input(">>> "))
-if x == 1:
-    x = input("Your Plain text : ")
-    y = input("Your Key : ")
+ y = input("Enter Your Plain Text : ")
+    z = input("Enter Your Key : ")
+    anwser = str(input("Do You Want Generate a Random Key(y/n) : "))
+    if anwser == 'y' or anwser = 'Y':
+        z = random_line()
+        print("Your Key Is : "+R+z+Y)
+        print("Keep it Save")
+    else:
+        z = input("Enter Your Key : ")
     z = get_fernet_encrypted_text(x,y)
     print("-"*80)
     print("The Encrypted Messege >> ",z[0])

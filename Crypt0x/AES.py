@@ -1,6 +1,7 @@
 # AES 256 encryption/decryption using pycrypto library
 
 import sys
+
 is_windows = sys.platform.startswith('win')
 
 # Console Colors
@@ -84,8 +85,6 @@ def encrypt(raw, password):
     print("Your Key >>> ",password)
     print("-"*80)
 
-
-
 def decrypt(enc, password):
     private_key = get_private_key(password)
     enc = base64.b64decode(enc)
@@ -101,10 +100,24 @@ print("""
 [0] - Exit
 """)
 
+def random_line(dir='keys.txt'):
+    import random
+    lines = open(dir).read().splitlines()
+    myline = random.choice(lines)
+    return myline
+
+
 x = int(input(">>>> "))
 if x == 1 :
     y = input("Enter Your Plain Text : ")
     z = input("Enter Your Key : ")
+    anwser = str(input("Do You Want Generate a Random Key(y/n) : "))
+    if anwser == 'y' or anwser = 'Y':
+        z = random_line()
+        print("Your Key Is : "+R+z+Y)
+        print("Keep it Save")
+    else:
+        z = input("Enter Your Key : ")
     print("*"*80)
     encrypt(y,z)
     print("*"*80)
