@@ -15,7 +15,7 @@ chmod +x requirments.sh
 ```
 3 - Download Requirments
 ```
-./requirments.sh
+pip3 install requirments.txt
 ```
 4 - Open Tool :
 ```
