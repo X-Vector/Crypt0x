@@ -11,7 +11,7 @@ git clone https://github.com/X-Vector/Crypt0x.git
 ```
 2 - Give Permision to requirments.sh
 ```
-chmod +x requirments.sh
+chmod +x requirments.txt
 ```
 3 - Download Requirments
 ```
