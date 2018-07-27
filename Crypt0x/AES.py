@@ -60,7 +60,7 @@ from Crypto.Protocol.KDF import PBKDF2
 
 
 
-BLOCK_SIZE = int(input("Your Block Size Must Be (16 or 32) for AES \nEnter Your Block Size : "))
+BLOCK_SIZE = int(input("Your Block Size Must Be (16 , 24 , 32) for AES \nEnter Your Block Size : "))
 pad = lambda s: s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * chr(BLOCK_SIZE - len(s) % BLOCK_SIZE)
 unpad = lambda s: s[:-ord(s[len(s) - 1:])]
 
