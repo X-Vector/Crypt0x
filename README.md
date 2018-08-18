@@ -9,15 +9,11 @@
 ```
 git clone https://github.com/X-Vector/Crypt0x.git
 ```
-2 - Give Permision to requirments.sh
-```
-chmod +x requirments.txt
-```
-3 - Download Requirments
+2 - Download Requirments
 ```
 pip3 -r install requirments.txt
 ```
-4 - Open Tool :
+3 - Open Tool :
 ```
 python3 crypto.py
 ```
